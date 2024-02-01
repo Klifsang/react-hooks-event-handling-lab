@@ -7,6 +7,7 @@ const Keypad = () => {
   const [password, setPassword] = useState("");
 
   const handleInputChange = (event) => {
+    event.preventDefault();
     const newPassword = event.target.value;
     setPassword(newPassword);
     console.log("Entering password...");
